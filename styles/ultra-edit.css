@@ -1,0 +1,137 @@
+/* common  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* share style  */
+.primary-btn{
+    background-color: #5cb85c;;
+    color: white;
+    padding: 1rem;
+    font-size: 1.23rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    border: none;
+}
+
+/* nav section style start */
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 20vh;
+    /* background-color: aqua; */
+    align-items: center;
+    max-width: 90vw;
+    margin: auto;
+    gap:3rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    max-width: 40%;
+}
+.logo h3{
+font-size: 3rem;
+}
+.nav-links{
+    display: flex;
+    gap: 1rem;
+}
+.link{
+    list-style: none;
+    width: 8rem;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(84, 80, 80);
+    font-size: 1.25rem;
+}
+.nav-links button{
+    border: 2px solid black;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1rem;
+    width: 10rem;
+
+}
+/* main section style start  */
+main > section{
+    max-width: 1140px;
+    margin: auto;
+}
+/* dwonlod section style start  */
+.seciton-heading{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.seciton-heading img{
+width: 20%;
+}
+.seciton-heading h4{
+font-size: 2.25rem;
+font-weight: 400;
+
+}
+.card-container{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 2rem;
+}
+
+.card{
+    /* border: 2px solid blue; */
+    height: 20rem;
+    max-width: 20rem;
+    display: grid;
+    place-items: center;
+    background-color: #f9f9f9;
+}
+.card-title{
+      font-size: 2rem;
+    font-weight: 600;
+}
+.card-discription{
+   color: rgb(120, 111, 111);
+}
+.card button a{
+    text-decoration: none;
+    color: white;
+   
+}
+.code-discription{
+    max-width: 20rem;
+    text-align: center;
+}
+
+/* queary for mobile  */
+.hide{
+    display: none;
+}
+@media screen and (max-width:576px) {
+   nav,
+   .logo,
+   .nav-links
+   {
+    flex-direction: column;
+   }
+   nav{
+    margin: 0;
+    max-width: 100%;
+   }
+}
+/* quary for table  */
+@media screen and (min-width:576px) and (max-width:992px) {
+   nav,
+   .logo,
+   .nav-links
+   {
+    flex-direction: column;
+   }
+   nav{
+    margin: 0;
+    max-width: 100%;
+   }
+}
