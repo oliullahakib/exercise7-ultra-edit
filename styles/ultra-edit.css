@@ -1,11 +1,13 @@
 /* common  */
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* share style  */
-.primary-btn{
-    background-color: #5cb85c;;
+.primary-btn {
+    background-color: #5cb85c;
+    ;
     color: white;
     padding: 1rem;
     font-size: 1.23rem;
@@ -15,7 +17,7 @@
 }
 
 /* nav section style start */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     height: 20vh;
@@ -23,32 +25,39 @@ nav{
     align-items: center;
     max-width: 90vw;
     margin: auto;
-    gap:3rem;
+    gap: 3rem;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     max-width: 40%;
 }
-.logo h3{
-font-size: 3rem;
+
+.logo h3 {
+    font-size: 3rem;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
     gap: 1rem;
 }
-.link{
+
+.link {
     list-style: none;
     width: 8rem;
 }
-.link a{
+
+.link a {
     text-decoration: none;
     color: rgb(84, 80, 80);
     font-size: 1.25rem;
 }
-.nav-links button{
+
+.nav-links button {
     border: 2px solid black;
     font-size: 1.25rem;
     font-weight: 700;
@@ -56,32 +65,37 @@ font-size: 3rem;
     width: 10rem;
 
 }
+
 /* main section style start  */
-main > section{
+main>section {
     max-width: 1140px;
     margin: auto;
 }
+
 /* dwonlod section style start  */
-.seciton-heading{
+.seciton-heading {
     display: flex;
     align-items: center;
     margin-bottom: 2rem;
 }
-.seciton-heading img{
-width: 20%;
+
+.seciton-heading img {
+    width: 20%;
 }
-.seciton-heading h4{
-font-size: 2.25rem;
-font-weight: 400;
+
+.seciton-heading h4 {
+    font-size: 2.25rem;
+    font-weight: 400;
 
 }
-.card-container{ 
+
+.card-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
 }
 
-.card{
+.card {
     /* border: 2px solid blue; */
     height: 20rem;
     max-width: 20rem;
@@ -89,49 +103,80 @@ font-weight: 400;
     place-items: center;
     background-color: #f9f9f9;
 }
-.card-title{
-      font-size: 2rem;
+
+.card-title {
+    font-size: 2rem;
     font-weight: 600;
 }
-.card-discription{
-   color: rgb(120, 111, 111);
+
+.card-discription {
+    color: rgb(120, 111, 111);
 }
-.card button a{
+
+.card button a {
     text-decoration: none;
     color: white;
-   
+
 }
-.code-discription{
+
+.code-discription {
     max-width: 20rem;
     text-align: center;
 }
 
 /* queary for mobile  */
-.hide{
+.hide {
     display: none;
 }
+
 @media screen and (max-width:576px) {
-   nav,
-   .logo,
-   .nav-links
-   {
-    flex-direction: column;
-   }
-   nav{
-    margin: 0;
-    max-width: 100%;
-   }
+
+    nav,
+    .logo,
+    .nav-links,
+    .seciton-heading {
+        flex-direction: column;
+    }
+
+    nav {
+        margin: 0;
+        max-width: 100%;
+        margin-bottom: 20rem;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main {
+        padding-top: 5rem;
+    }
 }
+
+
 /* quary for table  */
 @media screen and (min-width:576px) and (max-width:992px) {
-   nav,
-   .logo,
-   .nav-links
-   {
-    flex-direction: column;
-   }
-   nav{
-    margin: 0;
-    max-width: 100%;
-   }
+
+    nav,
+    .logo,
+    .nav-links,
+    .seciton-heading {
+        flex-direction: column;
+    }
+
+    nav {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding-top: 5rem;
+    }
+    .dwonload {
+            padding-top: 25rem;
+    }
 }
